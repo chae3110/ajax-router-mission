@@ -44,7 +44,7 @@ function App() {
           <Route index element={<Home posts={posts} />} />
           <Route path="posts" element={<Posts posts={posts} />} />
           <Route path="posts/:id" element={<PostDetail posts={posts} onDelete={handleDelete} />} />
-          <Route path="posts/new" element={<PostNew post={posts} setPosts={setPosts} />} />
+          <Route path="posts/new" element={<PostNew posts={posts} setPosts={setPosts} />} />
           <Route path="posts/:id/edit" element={<PostEdit posts={posts} setPosts={setPosts}/>} />
         </Route>
 
