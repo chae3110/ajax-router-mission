@@ -5,7 +5,7 @@ export default function PostDetail({ posts, onDelete }) {
 
   const post = posts.find(p => p.id === Number(id));
 
-  if (!post) return <div>글 없음</div>;
+  if (!post) return <div>글 X</div>;
 
   return (
     <section>
