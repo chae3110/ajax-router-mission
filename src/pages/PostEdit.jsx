@@ -38,13 +38,17 @@ export default function PostEdit({ posts, setPosts }) {
     navigate(`/posts/${id}`);
   };
   return (
-    <form action="" onSubmit={handleSubmit}>
-      <input type="text"
-        name="title"
-        value='제목'
-        onChange={handleChange} />
-        <textarea name="content" placeholder="내용" value={form.content} onChange={handleChange}></textarea>
-        <button type="submit">수정</button>
-    </form>
+    <section>
+      <h2>글 수정</h2>
+      <form action="" onSubmit={handleSubmit}>
+        <input type="text"
+          name="title"
+          value='제목'
+          onChange={handleChange} />
+          <textarea name="content" placeholder="내용" value={form.content} onChange={handleChange}></textarea>
+          <button type="submit">수정</button>
+      </form>
+    </section>
+   
   )
 }
