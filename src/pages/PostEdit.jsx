@@ -41,9 +41,9 @@ export default function PostEdit({ posts, setPosts }) {
     <form action="" onSubmit={handleSubmit}>
       <input type="text"
         name="title"
-        value={form.title}
+        value='제목'
         onChange={handleChange} />
-        <textarea name="content" placeholder={posts.content} value={form.content} onChange={handleChange}></textarea>
+        <textarea name="content" placeholder="내용" value={form.content} onChange={handleChange}></textarea>
         <button type="submit">수정</button>
     </form>
   )

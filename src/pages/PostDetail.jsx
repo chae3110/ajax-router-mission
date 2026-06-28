@@ -1,4 +1,4 @@
-import { useParams, Link, NavLink } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 
 export default function PostDetail({ posts, onDelete }) {
   const { id } = useParams();
